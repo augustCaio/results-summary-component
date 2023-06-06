@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--link css-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Importação fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Resut summary component</title>
+  </head>
+  <body
+    class="bg-result-white flex items-center justify-center h-screen w-screen"
+  >
+    <main class="flex flex-row drop-shadow-2xl">
+      <section
+        class="flex flex-col items-center justify-center gap-[37px] h-[511px] w-[366px] bg-gradient-to-t from-result-r-blue from-45% to-result-l-blue rounded-[34px] z-10"
+      >
+        <span
+          class="font-hanken font-[500] text-result-p-blue text-[25pt] mt-[40px"
+          >Your Result</span
+        >
+        <div
+          class="flex flex-col items-center justify-center w-[201px] h-[201px] bg-result-r-blue rounded-[999px]"
+        >
+          <h2 class="font-hanken font-[700] text-[62pt] text-result-white">
+            76
+          </h2>
+          <span
+            class="font-hanken font-[500] text-[10pt] text-result-p-blue mt-[-20px]"
+            >of 100</span
+          >
+        </div>
+        <div
+          class="flex flex-col items-center justify-center w-[251px] h-[115px]"
+        >
+          <span class="font-hanken font-[500] text-result-p-blue text-[25pt]"
+            >Great</span
+          >
+          <p
+            class="font-hanken font-[500] text-center text-[13pt] text-result-p-blue mb-[58px]"
+          >
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </section>
+      <section
+        class="flex flex-col items-center justify-center gap-[18px] h-[511px] w-[370px] rounded-r-[34px] bg-result-white relative inset-y-0 right-[22px]"
+      >
+        <h2 class="w-[259px] font-hanken font-[700] text-[20px]">Summary</h2>
+        <div
+          class="flex flex-row items-center justify-between w-[259px] h-[57px] bg-result-l-red bg-opacity-10 rounded-[13px] px-[20px]"
+        >
+          <div class="flex gap-[17px]">
+            <img src="/public/icon-reaction.svg" alt="Reaction icon" />
+            <span class="font-hanken font-[700] text-result-l-red"
+              >Reaction</span
+            >
+          </div>
+          <p class="font-hanken font-[400]">
+            <span class="font-hanken font-[700]">80</span>/100
+          </p>
+        </div>
+        <div
+          class="flex flex-row items-center justify-between w-[259px] h-[57px] bg-result-l-yellow bg-opacity-10 rounded-[13px] px-[20px]"
+        >
+          <div class="flex gap-[17px]">
+            <img src="/public/icon-memory.svg" alt="Reaction icon" />
+            <span class="font-hanken font-[700] text-result-l-yellow"
+              >Memory</span
+            >
+          </div>
+          <p class="font-hanken font-[400]">
+            <span class="font-hanken font-[700]">92</span>/100
+          </p>
+        </div>
+        <div
+          class="flex flex-row items-center justify-between w-[259px] h-[57px] bg-result-l-green bg-opacity-10 rounded-[13px] px-[20px]"
+        >
+          <div class="flex gap-[17px]">
+            <img src="/public/icon-verbal.svg" alt="Reaction icon" />
+            <span class="font-hanken font-[700] text-result-l-green"
+              >Verbal</span
+            >
+          </div>
+          <p class="font-hanken font-[400]">
+            <span class="font-hanken font-[700]">61</span>/100
+          </p>
+        </div>
+        <div
+          class="flex flex-row items-center justify-between w-[259px] h-[57px] bg-result-ll-blue bg-opacity-10 rounded-[13px] px-[20px]"
+        >
+          <div class="flex gap-[17px]">
+            <img src="/public/icon-visual.svg" alt="Reaction icon" />
+            <span class="font-hanken font-[700] text-result-ll-blue"
+              >Visual</span
+            >
+          </div>
+          <p class="font-hanken font-[400]">
+            <span class="font-hanken font-[700]">61</span>/100
+          </p>
+        </div>
+        <button
+          class="w-[259px] h-[56px] bg-result-d-gray rounded-[28px] font-hanken font-[700] text-result-white hover:bg-result-ll-blue hover:duration-700"
+        >
+          Continue
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
